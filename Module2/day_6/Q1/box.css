@@ -1,0 +1,40 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    height: 300px;
+    width: 500px;
+}
+.box{
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.box1{
+    background-color: orangered;
+}
+.box2{
+    background-color: rgb(43, 43, 247);
+}
+.box3{
+    background-color: rgb(250, 226, 4);
+}
+.box4{
+    background-color: purple;
+}
+.box5{
+    background-color: green;
+}
+.box6{
+    background-color: lightblue;
+}
+.box7{
+    background-color: orange;
+}
+.box8{
+    background-color: lightseagreen;
+}
+.box9{
+    background-color: brown;
+}
