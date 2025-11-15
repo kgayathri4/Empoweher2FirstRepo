@@ -1,0 +1,59 @@
+.navbar{
+    height: 70px;
+    width: 90%;
+    border: 0.1px solid whitesmoke;
+    display: flex;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar h1{
+    color: rgb(40, 88, 233);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+.inner{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    align-items: center;
+    padding: 10px 0px;
+    color: rgb(74, 74, 253);
+}
+.download{
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+.order{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+}
+.box{
+    background-color: orangered;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.box img{
+    height: 120px;
+    width: 120px;
+}
+.viewAll{
+    padding:10px;
+}
+.midsection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
