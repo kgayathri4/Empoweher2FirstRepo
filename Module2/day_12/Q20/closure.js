@@ -1,6 +1,4 @@
-// closuresAssignment.js
 
-/*************** QUESTION 1: Closure-Based Counter ***************/
 function createCounter() {
   let count = 0;
 
@@ -20,18 +18,12 @@ function createCounter() {
   };
 }
 
-// Example usage:
+
 const counter = createCounter();
 counter.increment();
 counter.increment();
 counter.decrement();
 
-
-/*************** QUESTION 1 EXPLANATION ***************/
-// Closures keep the variable "count" private inside createCounter.
-// Multiple counters have separate closed-over variables.
-
-/*************** QUESTION 2: Bank Account with Closures ***************/
 function createBankAccount() {
   let balance = 0;
   let history = [];
@@ -65,10 +57,9 @@ function createBankAccount() {
   };
 }
 
-// Example usage:
 const account = createBankAccount();
 account.deposit(500);
 account.withdraw(200);
 account.withdraw(400);
-console.log(account.balance); // undefined
+console.log(account.balance); 
 account.getHistory();
