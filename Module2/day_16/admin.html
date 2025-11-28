@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management App - Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="btn">Home</a>
+        <h2>Book Management</h2>
+    </nav>
+
+    <main class="container">
+        <!-- Add Book Form -->
+        <section class="form-section">
+            <h3>Add Book</h3>
+            <form id="book-form">
+                <div class="field">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div class="field">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" required>
+                </div>
+                <div class="field">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="Fiction">Fiction</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Technical">Technical</option>
+                    </select>
+                </div>
+                <div class="actions">
+                    <button type="submit" class="btn">Add Book</button>
+                    <button type="button" id="sort-az" class="btn small">Sort A → Z</button>
+                    <button type="button" id="sort-za" class="btn small">Sort Z → A</button>
+                </div>
+            </form>
+
+            <div class="filter-row">
+                <label for="filter">Filter by Category:</label>
+                <select id="filter">
+                    <option value="All">All</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Technical">Technical</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Books Display Section -->
+        <section class="grid-section">
+            <h3>Books</h3>
+            <div id="books-grid" class="grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
